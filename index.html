@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/estilo.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Protest+Strike&display=swap" rel="stylesheet">
+
+        <title>3 en raya</title>
+    </head>
+
+    <body>
+
+        <h1>3 en raya</h1>
+
+        <p id="indicar">Indica el modo y el tipo de juego antes de empezar la partida.</p>
+
+        <form>
+            <label for="modo_juego">Indica el modo de juego que quieres jugar:
+            <select id="modo_juego">
+                <option value="1">1 jugador vs aleatorio</option>
+                <option value="2">1 jugador vs IA</option>
+                <option value="3">2 jugadores</option>
+            </select>
+            </label>
+
+            <label for="tipo_juego">Indica el tipo de juego:
+                <select id="tipo_juego">
+                    <option value="6">Juego de 6 fichas</option>
+                    <option value="9">Juego de 9 fichas</option>
+                </select>
+            </label>
+        </form>
+
+        <button onclick="empezarPartida()" id="empezar_partida">Empezar Partida</button>
+
+        <p id="ganador"></p>
+
+        <div>
+            <p id="turno"></p>
+        </div>
+
+        <div class="container">
+            <div id="contadores">
+                <p id="tiempoJuego"></p>
+                <p id="contadorRegresivo"></p>
+            </div>
+            <div id="tablero">
+                <button id="celda0" class="celda"></button>
+                <button id="celda1" class="celda"></button>
+                <button id="celda2" class="celda"></button>
+                <button id="celda3" class="celda"></button>
+                <button id="celda4" class="celda"></button>
+                <button id="celda5" class="celda"></button>
+                <button id="celda6" class="celda"></button>
+                <button id="celda7" class="celda"></button>
+                <button id="celda8" class="celda"></button>
+            </div>
+        </div>
+
+        <div class="historico">
+            <table id="historico"></table>
+        </div>
+
+        <script src="js/script.js"></script>
+
+    </body>
+
+</html>

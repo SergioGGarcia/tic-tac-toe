@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+}
+
+body {
+    background-color: rgb(85, 85, 85);
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    padding: 20px;
+    font-family: 'Press Start 2P', system-ui;
+    font-size: 250%;
+}
+
+#indicar {
+    color: yellow;
+    font-size: 150%;
+    font-family: 'Press Start 2P', system-ui;
+    padding: 20px;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+
+    padding: 50px;
+}
+
+select {
+    font-weight: 400;
+}
+
+#empezar_partida {
+    margin-bottom: 40px;
+    padding: 5px;
+    font-family: 'Press Start 2P', system-ui;
+}
+
+#turno, #ganador {
+    color: yellow;
+    font-size: 125%;
+    margin-bottom: 40px;
+    padding: 5px;
+    font-family: 'Press Start 2P', system-ui;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+
+#contadores {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+
+#tablero {
+    width: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+#tablero button {
+    width: 200px;
+    height: 200px;
+    background-color: #363636;
+    border: 5px solid grey;
+    border-radius: 10px;
+    color: white;
+    font-size: 300%;
+    font-family: 'Press Start 2P', system-ui;
+}
+
+#tablero button:hover {
+    background-color: #535353;
+}
+
+table {
+    margin: 50px 0;
+}
+
+table, td {
+    border: 1px solid;
+    border-collapse: collapse;
+    padding: 10px;
+    text-align: center;
+}
+
+.jugador1 {
+    background-color: green;
+    font-family: 'Press Start 2P', system-ui;
+}
+
+.jugador2 {
+    background-color: yellowgreen;
+    font-family: 'Press Start 2P', system-ui;
+}
+
+.cpu {
+    background-color: red;
+    font-family: 'Press Start 2P', system-ui;
+}
